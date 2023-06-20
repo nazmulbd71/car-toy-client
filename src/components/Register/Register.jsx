@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
+import register from '../../assets/images/login-now.png'
 
 
 const Register = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col">
-                    <div className="text-center">
-                        <h1 className="text-5xl font-bold">Register Here!</h1>
+                <div className="hero-content flex-row">
+                    <div className="text-center mx-11">
+                        <img src={register} alt="" />
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <h1 className="text-4xl font-bold text-center pt-5">Register Now !</h1>
                         <div className="card-body">
                             <div className="form-control">
                                 <label className="label">
