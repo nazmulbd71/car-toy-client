@@ -11,6 +11,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <div className='w-full mx-auto'>
     <React.StrictMode>
       <RouterProvider router={router}></RouterProvider>
-    </React.StrictMode>,
+    </React.StrictMode>
   </div>
 )

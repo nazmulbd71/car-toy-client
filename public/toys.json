@@ -1,0 +1,194 @@
+[
+    {
+        "_id": 1,
+        "carToyName": "Super Speed Racer",
+        "carToyImg": "https://i.ibb.co/sm1V0mB/car-Toy-img-2.webp",
+        "carToyPrice": "29.99",
+        "carToyManufacturer": "Speedy Toys Inc.",
+        "carToyRatings": 4.5
+    },
+    {
+        "_id": 2,
+        "carToyName": "Mega Monster Truck",
+        "carToyImg": "https://i.ibb.co/X8nKxSk/car-Toy-img-3.webp",
+        "carToyPrice": "39.99",
+        "carToyManufacturer": "Monster Toys Ltd.",
+        "carToyRatings": 4.2
+    },
+    {
+        "_id": 3,
+        "carToyName": "Turbo Drift Racer",
+        "carToyImg": "https://i.ibb.co/BzLd4Cn/car-Toy-img-4.webp",
+        "carToyPrice": "24.99",
+        "carToyManufacturer": "Velocity Toys",
+        "carToyRatings": 4.7
+    },
+    {
+        "_id": 4,
+        "carToyName": "Off-Road Adventure",
+        "carToyImg": "https://i.ibb.co/Y3JBs73/car-Toy-img-5.webp",
+        "carToyPrice": "19.99",
+        "carToyManufacturer": "Adventure Toys Inc.",
+        "carToyRatings": 4.0
+    },
+    {
+        "_id": 5,
+        "carToyName": "Racing Champions",
+        "carToyImg": "https://i.ibb.co/yPZTmxP/car-Toy-img-6.webp",
+        "carToyPrice": "32.99",
+        "carToyManufacturer": "Champion Toys",
+        "carToyRatings": 4.8
+    },
+    {
+        "_id": 6,
+        "carToyName": "Mini Speedster",
+        "carToyImg": "https://i.ibb.co/8bxY0kd/car-Toy-img-7.webp",
+        "carToyPrice": "14.99",
+        "carToyManufacturer": "Tiny Wheels Corp.",
+        "carToyRatings": 4.1
+    },
+    {
+        "_id": 7,
+        "carToyName": "Stunt King",
+        "carToyImg": "https://i.ibb.co/cXyFkzP/car-Toy-img-8.webp",
+        "carToyPrice": "21.99",
+        "carToyManufacturer": "Thrill Toys",
+        "carToyRatings": 4.6
+    },
+    {
+        "_id": 8,
+        "carToyName": "Nitro Blaze",
+        "carToyImg": "https://i.ibb.co/KyB4qnL/car-Toy-img-9.webp",
+        "carToyPrice": "17.99",
+        "carToyManufacturer": "Blazing Toys Co.",
+        "carToyRatings": 4.3
+    },
+    {
+        "_id": 9,
+        "carToyName": "Power Drifter",
+        "carToyImg": "https://i.ibb.co/z6rJpbm/car-Toy-img-10.webp",
+        "carToyPrice": "26.99",
+        "carToyManufacturer": "Velocity Toys Inc.",
+        "carToyRatings": 4.7
+    },
+    {
+        "_id": 10,
+        "carToyName": "Extreme Racer",
+        "carToyImg": "https://i.ibb.co/PxNbPBb/car-Toy-img-11.webp",
+        "carToyPrice": "31.99",
+        "carToyManufacturer": "Extreme Toys",
+        "carToyRatings": 4.5
+    },
+    {
+        "_id": 11,
+        "carToyName": "Off-Road Fury",
+        "carToyImg": "https://i.ibb.co/ss9S0jg/car-Toy-img-12.webp",
+        "carToyPrice": "27.99",
+        "carToyManufacturer": "Adventure Toys Inc.",
+        "carToyRatings": 4.4
+    },
+    {
+        "_id": 12,
+        "carToyName": "Speed Demon",
+        "carToyImg": "https://i.ibb.co/2nBHhFk/car-Toy-img-1.webp",
+        "carToyPrice": "34.99",
+        "carToyManufacturer": "Racing Toys Ltd.",
+        "carToyRatings": 4.9
+    },
+    {
+        "_id": 13,
+        "carToyName": "Turbo Boost",
+        "carToyImg": "https://i.ibb.co/sgbXHYt/car-Toy-img-13.webp",
+        "carToyPrice": "23.99",
+        "carToyManufacturer": "Velocity Toys",
+        "carToyRatings": 4.2
+    },
+    {
+        "_id": 14,
+        "carToyName": "Monster Mayhem",
+        "carToyImg": "https://i.ibb.co/cg1HWT7/car-Toy-img-14.webp",
+        "carToyPrice": "37.99",
+        "carToyManufacturer": "Monster Toys Ltd.",
+        "carToyRatings": 4.7
+    },
+    {
+        "_id": 15,
+        "carToyName": "Nitro Charger",
+        "carToyImg": "https://i.ibb.co/1ZH41WR/car-Toy-img-15.webp",
+        "carToyPrice": "19.99",
+        "carToyManufacturer": "Speedy Toys Inc.",
+        "carToyRatings": 4.0
+    },
+    {
+        "_id": 16,
+        "carToyName": "Street Surfer",
+        "carToyImg": "https://i.ibb.co/JFXWPfv/car-Toy-img-16.jpg",
+        "carToyPrice": "28.99",
+        "carToyManufacturer": "Ride-On Toys",
+        "carToyRatings": 4.6
+    },
+    {
+        "_id": 17,
+        "carToyName": "Power Racer",
+        "carToyImg": "https://i.ibb.co/ncsx37N/car-Toy-img-17.webp",
+        "carToyPrice": "25.99",
+        "carToyManufacturer": "Velocity Toys Inc.",
+        "carToyRatings": 4.3
+    },
+    {
+        "_id": 18,
+        "carToyName": "Off-Road Warrior",
+        "carToyImg": "https://i.ibb.co/dGMRBYW/car-Toy-img-18.jpg",
+        "carToyPrice": "32.99",
+        "carToyManufacturer": "Adventure Toys Inc.",
+        "carToyRatings": 4.5
+    },
+    {
+        "_id": 19,
+        "carToyName": "Mega Drifter",
+        "carToyImg": "https://i.ibb.co/ym9m1gq/car-Toy-img-19.jpg",
+        "carToyPrice": "39.99",
+        "carToyManufacturer": "Drift Toys",
+        "carToyRatings": 4.7
+    },
+    {
+        "_id": 20,
+        "carToyName": "Racing Dynamo",
+        "carToyImg": "https://i.ibb.co/QmGyfF3/car-Toy-img-20.jpg",
+        "carToyPrice": "36.99",
+        "carToyManufacturer": "Champion Toys",
+        "carToyRatings": 4.4
+    },
+    {
+        "_id": 21,
+        "carToyName": "Racing Dynamo",
+        "carToyImg": "https://i.ibb.co/kSS6PYq/car-Toy-img-21.webp",
+        "carToyPrice": "36.99",
+        "carToyManufacturer": "Champion Toys",
+        "carToyRatings": 4.4
+    },
+    {
+        "_id": 22,
+        "carToyName": "Racing Dynamo",
+        "carToyImg": "https://i.ibb.co/P68F9k2/car-Toy-img-22.jpg",
+        "carToyPrice": "63.99",
+        "carToyManufacturer": "Champion Toys",
+        "carToyRatings": 4.4
+    },
+    {
+        "_id": 23,
+        "carToyName": "Racing Dynamo",
+        "carToyImg": "https://i.ibb.co/PW2dsDW/car-Toy-img-23.webp",
+        "carToyPrice": "54.99",
+        "carToyManufacturer": "Champion Toys",
+        "carToyRatings": 4.4
+    },
+    {
+        "_id": 24,
+        "carToyName": "Racing Dynamo",
+        "carToyImg": "https://i.ibb.co/HTqcnzj/car-Toy-img-24.webp",
+        "carToyPrice": "67.99",
+        "carToyManufacturer": "Champion Toys",
+        "carToyRatings": 4.4
+    }
+]
