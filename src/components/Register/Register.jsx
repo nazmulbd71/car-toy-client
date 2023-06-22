@@ -1,8 +1,31 @@
 import { Link } from "react-router-dom";
 import register from '../../assets/images/login-now.png'
+import { useContext } from "react";
+import { AuthContext } from "../Providers/AuthProvider";
 
 
 const Register = () => {
+    const {createUser}= useContext(AuthContext)
+
+
+const handleRegister = event =>{
+    event.preventDefault();
+    const form = event.target 
+    const name = form.name.value
+    const photo = form.photo.value 
+    const email = form.email.value 
+    const password = form.password.value 
+    console.log(name,photo,email,password)
+
+    createUser(email,password)
+    .then(result=>{
+        const user = result.user 
+        console.log(user)
+    })
+    .catch(error=>{
+        console.log(error)
+    })
+}
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -12,7 +35,7 @@ const Register = () => {
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <h1 className="text-4xl font-bold text-center pt-5">Register Now !</h1>
-                        <div className="card-body">
+                        <form onSubmit={handleRegister} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
@@ -41,7 +64,7 @@ const Register = () => {
                                 <button className="btn btn-primary">Register</button>
                             </div>
                             <p className="mt-5">Already have an account please <Link className="underline text-blue-700" to="/login">Login</Link></p>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

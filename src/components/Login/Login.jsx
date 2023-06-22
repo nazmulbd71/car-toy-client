@@ -1,8 +1,28 @@
 import { Link } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import login from '../../assets/images/login-now.png'
+import { useContext } from "react";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Login = () => {
+    const {logIn} = useContext(AuthContext)
+
+    const handleLogin = event =>{
+        event.preventDefault();
+        const form = event.target 
+        const email = form.email.value 
+        const password = form.password.value 
+        console.log(email,password)
+    
+        logIn(email,password)
+        .then(result=>{
+            const user = result.user 
+            console.log(user)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+    }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -12,7 +32,7 @@ const Login = () => {
                     </div>
                     <div className="card flex-shrink-0 w-1/2 max-w-sm shadow-2xl bg-base-100">
                         <h1 className="text-4xl font-bold text-center pt-5">Login Now !</h1>
-                        <div className="card-body">
+                        <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -32,7 +52,7 @@ const Login = () => {
                                 <button className="btn btn-primary">Login</button>
                             </div>
                             <p className="mt-5">Don't have an account please <Link className="underline text-blue-700" to="/register">Register</Link></p>
-                        </div>
+                        </form>
 
                         <div>
                             <div className="divider mt-0">OR</div>
