@@ -15,7 +15,7 @@ const Toy = ({ toy }) => {
                     <p>Price: ${carToyPrice}</p>
                     <p>Rating: {carToyRatings}</p>
                     <div className="">
-                        <button className="w-full py-3 rounded-3xl bg-sky-700 font-bold text-white">Buy Now</button>
+                        <button className="w-full py-3 rounded-3xl bg-sky-700 font-bold text-white">Add To Cart</button>
                     </div>
                 </div>
             </div>

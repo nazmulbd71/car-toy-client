@@ -2,15 +2,17 @@ import { Link } from "react-router-dom";
 import navLogo from '../../../../public/logo.png'
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { FaUserCircle } from 'react-icons/fa';
 
 
 const Navbar = () => {
-    const {user,logOut}= useContext(AuthContext)
-  const handleLogout = ()=>{
-    logOut()
-    .then(()=>{})
-    .catch(error=>console.log(error))
-  }
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogout = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error))
+    }
     const navItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/alltoy">All Toy</Link></li>
@@ -61,7 +63,12 @@ const Navbar = () => {
             <div className="navbar-end">
                 <Link to='/login'>
                     {
-                        user ? <button onClick={handleLogout} className="btn mr-8">Logout</button>: <button className="btn mr-8">Login</button>
+                        user ? <div className="flex items-center">
+                            <div className="tooltip tooltip-left" data-tip={user ? user.email : ''}>
+                                <FaUserCircle className="h-8 w-8"></FaUserCircle>
+                            </div><button onClick={handleLogout} className="btn mx-8">Logout</button>
+                        </div>
+                            : <button className="btn mr-8">Login</button>
                     }
                 </Link>
             </div>

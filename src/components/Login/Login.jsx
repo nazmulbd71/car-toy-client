@@ -1,28 +1,48 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import login from '../../assets/images/login-now.png'
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Login = () => {
-    const {logIn} = useContext(AuthContext)
+    const { logIn,googleSignIn } = useContext(AuthContext)
+   
+    const navigate = useNavigate();
+    const location = useLocation();
 
-    const handleLogin = event =>{
+    let from = location.state?.from?.pathname || "/";
+
+    const handleLogin = event => {
         event.preventDefault();
-        const form = event.target 
-        const email = form.email.value 
-        const password = form.password.value 
-        console.log(email,password)
-    
-        logIn(email,password)
-        .then(result=>{
-            const user = result.user 
+        const form = event.target
+        const email = form.email.value
+        const password = form.password.value
+        console.log(email, password)
+
+        logIn(email, password)
+            .then(result => {
+                const user = result.user
+                console.log(user)
+                navigate(from,{replace: true})
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
+
+     const handleGoogleSignIn = ()=>{
+        googleSignIn()
+        .then(result => {
+            const user = result.user
             console.log(user)
+            navigate(from,{replace: true})
         })
-        .catch(error=>{
+        .catch(error => {
             console.log(error)
         })
-    }
+     }
+
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -57,7 +77,7 @@ const Login = () => {
                         <div>
                             <div className="divider mt-0">OR</div>
                             <div className='flex justify-center'>
-                                <button><FcGoogle className='h-10 mt-0 mb-3 w-8'></FcGoogle></button>
+                                <button onClick={handleGoogleSignIn}><FcGoogle className='h-10 mt-0 mb-3 w-8'></FcGoogle></button>
                             </div>
                         </div>
                     </div>
