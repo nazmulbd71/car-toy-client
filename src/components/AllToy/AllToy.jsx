@@ -10,6 +10,9 @@ const AllToy = () => {
             .then(data => setToys(data))
     }, [])
 
+
+
+
     return (
         <div>
             <h1 className='text-center text-violet-600 text-4xl font-bold my-10'>Our Grand Collections</h1>

@@ -1,7 +1,8 @@
 
 const Toy = ({ toy }) => {
 
-    const { carToyName, carToyImg, carToyPrice, carToyManufacturer, carToyRatings } = toy
+    const { carToyName, carToyImg, carToyPrice, carToyManufacturer, carToyRatings,_id } = toy
+
 
     return (
         <div>
